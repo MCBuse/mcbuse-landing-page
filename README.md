@@ -29,8 +29,18 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Deploy to Cloud Run
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The landing page deploys as the `mcbuse-landing-page` Cloud Run service in
+`europe-west1`. It defaults to the MCBuse GCP project and can be overridden for
+another project or region:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm run deploy:cloud-run
+
+# Optional overrides
+MCBUSE_GCP_PROJECT_ID=your-project MCBUSE_GCP_REGION=your-region npm run deploy:cloud-run
+```
+
+The deployment builds the standalone Next.js container in Cloud Build, deploys it
+to Cloud Run, and verifies the public service URL before reporting success.
