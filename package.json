@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build --webpack",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "deploy:cloud-run": "bash scripts/deploy-cloud-run.sh"
   },
   "dependencies": {
     "next": "16.3.5",
