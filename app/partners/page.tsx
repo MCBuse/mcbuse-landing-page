@@ -20,7 +20,7 @@ export default function PartnersPage() {
         <div className="relative mx-auto grid max-w-6xl gap-10 px-6 py-16 sm:py-20 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
           <div>
             <p className="mb-2 font-mono text-xs text-brand-ink">{partnersCopy.hero.audience}</p>
-            <h1 className="font-display text-3xl leading-tight text-ink sm:text-4xl">
+            <h1 className="font-display font-semibold text-3xl leading-tight text-ink sm:text-4xl">
               {partnersCopy.hero.headline}
             </h1>
             <p className="mt-4 max-w-xl text-lg leading-relaxed text-ink-muted">

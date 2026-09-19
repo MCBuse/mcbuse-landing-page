@@ -15,7 +15,7 @@ export default function TeamPage() {
       <section className="relative overflow-hidden border-b border-hairline">
         <Glow />
         <div className="relative mx-auto max-w-6xl px-6 py-16 sm:py-20">
-          <h1 className="font-display text-4xl leading-tight text-ink sm:text-5xl">
+          <h1 className="font-display font-semibold text-4xl leading-tight text-ink sm:text-5xl">
             {teamCopy.headline}
           </h1>
           <p className="mt-4 max-w-2xl text-lg text-ink-muted">{teamCopy.subheadline}</p>
@@ -30,7 +30,7 @@ export default function TeamPage() {
             ))}
           </div>
           <div className="mt-10 flex flex-wrap gap-3">
-            <Button href="/contact#merchant-form" variant="primary">
+            <Button href="https://merchant.mcbuse.com" variant="primary" target="_blank" rel="noopener noreferrer">
               Join the Pilot
             </Button>
             <Button href="/contact#partner-form" variant="secondary">

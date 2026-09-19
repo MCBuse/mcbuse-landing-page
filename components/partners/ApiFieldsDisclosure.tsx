@@ -4,7 +4,7 @@ import { responsibilityBoundary } from "@/content/compliance";
 export function ApiFieldsDisclosure() {
   return (
     <details className="rounded-xl border border-hairline bg-surface-2 p-5">
-      <summary className="cursor-pointer font-display text-lg text-ink">
+      <summary className="cursor-pointer font-display font-semibold text-lg text-ink">
         {partnersCopy.apiFields.cta}
       </summary>
       <div className="mt-4">

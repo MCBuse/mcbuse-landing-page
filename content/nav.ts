@@ -14,7 +14,7 @@ export const primaryNav: NavItem[] = [
 ];
 
 export const headerCtas = {
-  joinPilot: { label: "Join the Pilot", href: "/contact#merchant-form" },
+  joinPilot: { label: "Join the Pilot", href: "https://merchant.mcbuse.com" },
   watchDemo: { label: "Watch Demo", href: "/contact#sandbox" },
 };
 

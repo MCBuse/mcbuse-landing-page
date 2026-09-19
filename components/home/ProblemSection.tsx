@@ -16,7 +16,7 @@ export function ProblemSection() {
             >
               <div className="flex items-center gap-3">
                 <span className="h-2 w-2 shrink-0 rounded-full bg-brand" />
-                <h3 className="font-display text-base text-ink">{card.title}</h3>
+                <h3 className="font-display font-semibold text-base text-ink">{card.title}</h3>
               </div>
               <p className="mt-2 text-sm leading-relaxed text-ink-muted">{card.description}</p>
             </div>

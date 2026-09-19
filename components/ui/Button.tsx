@@ -4,13 +4,13 @@ import type { ReactNode } from "react";
 type Variant = "primary" | "secondary" | "ghost";
 
 const variantClasses: Record<Variant, string> = {
-  primary: "bg-brand text-near-black hover:bg-brand-dark",
+  primary: "bg-brand text-white hover:bg-brand-dark",
   secondary: "border border-hairline bg-surface text-ink hover:border-brand hover:text-brand-ink",
   ghost: "text-ink hover:text-brand-ink",
 };
 
 const base =
-  "inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold transition-colors disabled:cursor-not-allowed disabled:opacity-50";
+  "inline-flex items-center justify-center gap-2 rounded-[10px] px-6 py-3 text-sm font-semibold transition-colors disabled:cursor-not-allowed disabled:opacity-50";
 
 type CommonProps = {
   children: ReactNode;
@@ -22,6 +22,8 @@ type LinkButtonProps = CommonProps & {
   href: string;
   onClick?: () => void;
   disabled?: boolean;
+  target?: string;
+  rel?: string;
 };
 
 type NativeButtonProps = CommonProps & {
@@ -45,7 +47,7 @@ export function Button(props: LinkButtonProps | NativeButtonProps) {
       );
     }
     return (
-      <Link href={props.href} onClick={props.onClick} className={classes}>
+      <Link href={props.href} onClick={props.onClick} target={props.target} rel={props.rel} className={classes}>
         {children}
       </Link>
     );

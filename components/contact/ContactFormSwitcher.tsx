@@ -76,7 +76,7 @@ export function ContactFormSwitcher() {
               aria-selected={isActive}
               aria-controls={`${form.id}-panel`}
               onClick={() => selectForm(form.id)}
-              className={`inline-flex min-h-11 items-center rounded-xl border px-4 text-sm font-medium transition-colors ${
+              className={`inline-flex min-h-11 items-center rounded-[10px] border px-4 text-sm font-medium transition-colors ${
                 isActive
                   ? "border-brand bg-brand/10 text-brand-ink"
                   : "border-hairline bg-surface-2 text-ink-muted hover:border-brand/50 hover:text-ink"

@@ -18,7 +18,7 @@ export function PhaseTimeline() {
             />
           )}
           <div className="border-b border-hairline pb-8 pt-0.5 last:border-b-0">
-            <h3 className="font-display text-xl text-ink">{phase.title}</h3>
+            <h3 className="font-display font-semibold text-xl text-ink">{phase.title}</h3>
             <ul className="mt-3 space-y-2">
               {phase.items.map((item) => (
                 <li key={item} className="text-sm leading-relaxed text-ink-muted">

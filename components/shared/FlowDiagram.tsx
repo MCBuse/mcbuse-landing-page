@@ -9,7 +9,7 @@ export function FlowDiagram({ steps }: { steps: string[] }) {
         <li key={step} className="flex items-center gap-3 sm:flex-1">
           <Link
             href={`/product#${anchors[i]}`}
-            className="flex-1 rounded-xl border border-hairline bg-surface-2 px-4 py-3 text-center font-mono text-sm text-ink transition-colors hover:border-brand hover:text-brand-ink"
+            className="flex-1 rounded-[10px] border border-hairline bg-surface-2 px-4 py-3 text-center font-mono text-sm text-ink transition-colors hover:border-brand hover:text-brand-ink"
           >
             {step}
           </Link>

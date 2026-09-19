@@ -1,19 +1,21 @@
 @import "tailwindcss";
 
 :root {
-  /* Dark-first theme, following blockchair.com's uniformly dark surface system */
-  --color-paper: #0a0b0f; /* page background */
-  --color-surface: #13151c; /* card / raised surface */
-  --color-surface-2: #1a1d26; /* nested surface, hover */
-  --color-ink: #ffffff;
-  --color-ink-muted: #9aa1ad;
-  /* MCBuse brand, sampled from the live logo at mcbuse.com */
-  --color-brand: #288cff;
-  --color-brand-dark: #1f6fd6;
-  --color-brand-ink: #4d9fff; /* lightened for AA text contrast on dark surfaces */
-  --color-near-black: #0a0b0f;
-  --color-hairline: #262a35;
-  --color-danger: #ff6b6b;
+  /* Light theme matching the merchant portal (merchant.mcbuse.com): stock
+     Tailwind v4 blue/slate, IBM Plex Sans throughout. Values below are the
+     exact hex the portal renders (verified against its computed styles),
+     not approximations. */
+  --color-paper: #f8fafc; /* slate-50, page background */
+  --color-surface: #ffffff; /* card / raised surface */
+  --color-surface-2: #f1f5f9; /* slate-100, nested surface, hover */
+  --color-ink: #0f172a; /* slate-900 */
+  --color-ink-muted: #62748e; /* slate-500 */
+  /* MCBuse brand, matched to the merchant portal's actual blue-600/700 */
+  --color-brand: #155dfc;
+  --color-brand-dark: #1447e6;
+  --color-brand-ink: #1447e6; /* darkened for AA text contrast on light surfaces */
+  --color-hairline: #e2e8f0; /* slate-200 */
+  --color-danger: #e7000b; /* red-600 */
 }
 
 @theme inline {
@@ -25,11 +27,10 @@
   --color-brand: var(--color-brand);
   --color-brand-dark: var(--color-brand-dark);
   --color-brand-ink: var(--color-brand-ink);
-  --color-near-black: var(--color-near-black);
   --color-hairline: var(--color-hairline);
   --color-danger: var(--color-danger);
 
-  --font-display: var(--font-fraunces);
+  --font-display: var(--font-plex-sans);
   --font-sans: var(--font-plex-sans);
   --font-mono: var(--font-plex-mono);
 }
@@ -40,7 +41,7 @@
 
 html {
   scroll-behavior: smooth;
-  color-scheme: dark;
+  color-scheme: light;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -69,7 +70,7 @@ body {
   top: 0;
   z-index: 100;
   background: var(--color-brand);
-  color: var(--color-near-black);
+  color: #ffffff;
   padding: 0.75rem 1.25rem;
   border-radius: 0 0 4px 0;
   font-weight: 600;

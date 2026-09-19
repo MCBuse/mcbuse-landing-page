@@ -13,7 +13,7 @@ export function TeamCard({
     <div className="rounded-xl border border-hairline bg-surface-2 p-6 transition-colors hover:border-brand/60">
       <div className="flex items-center gap-3">
         <span className="h-2 w-2 shrink-0 rounded-full bg-brand" />
-        <h3 className="font-display text-lg text-ink">{name}</h3>
+        <h3 className="font-display font-semibold text-lg text-ink">{name}</h3>
       </div>
       <p className="mt-1 text-sm font-medium text-brand-ink">{role}</p>
       <p className="mt-4 text-sm text-ink-muted">{education}</p>

@@ -20,7 +20,7 @@ export function ValueSnapshot() {
             >
               <div className="flex items-center gap-3">
                 <span className="h-2 w-2 shrink-0 rounded-full bg-brand" />
-                <h3 className="font-display text-lg text-ink">{item.label}</h3>
+                <h3 className="font-display font-semibold text-lg text-ink">{item.label}</h3>
               </div>
               <p className="mt-2 text-sm leading-relaxed text-ink-muted">{item.description}</p>
             </div>
@@ -30,7 +30,7 @@ export function ValueSnapshot() {
         <div className="mt-8">
           <Link
             href={cta.href}
-            className="inline-flex items-center rounded-full bg-brand px-6 py-3 text-sm font-semibold text-near-black transition-colors hover:bg-brand-dark"
+            className="inline-flex items-center rounded-[10px] bg-brand px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-brand-dark"
           >
             {cta.label}
           </Link>

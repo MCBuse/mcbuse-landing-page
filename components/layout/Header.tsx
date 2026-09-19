@@ -40,14 +40,14 @@ export function Header() {
           <Button href={headerCtas.watchDemo.href} variant="ghost">
             {headerCtas.watchDemo.label}
           </Button>
-          <Button href={headerCtas.joinPilot.href} variant="primary">
+          <Button href={headerCtas.joinPilot.href} variant="primary" target="_blank" rel="noopener noreferrer">
             {headerCtas.joinPilot.label}
           </Button>
         </div>
 
         <button
           type="button"
-          className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-xl border border-hairline p-2 lg:hidden"
+          className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-[10px] border border-hairline p-2 lg:hidden"
           aria-expanded={open}
           aria-controls="mobile-nav"
           aria-label={open ? "Close menu" : "Open menu"}
@@ -82,7 +82,14 @@ export function Header() {
               <Button href={headerCtas.watchDemo.href} variant="ghost" onClick={() => setOpen(false)} className="w-full">
                 {headerCtas.watchDemo.label}
               </Button>
-              <Button href={headerCtas.joinPilot.href} variant="primary" onClick={() => setOpen(false)} className="w-full">
+              <Button
+                href={headerCtas.joinPilot.href}
+                variant="primary"
+                onClick={() => setOpen(false)}
+                className="w-full"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 {headerCtas.joinPilot.label}
               </Button>
             </li>

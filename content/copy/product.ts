@@ -2,7 +2,7 @@ export const productCopy = {
   hero: {
     headline: "The MCBuse Data Architecture",
     subheadline: "Four core modules that turn high-frequency micro-transactions into structured data.",
-    cta: { label: "Request Sandbox Access", href: "/contact#sandbox" },
+    cta: { label: "Request Sandbox Access", href: "https://merchant.mcbuse.com" },
   },
   systems: [
     {

@@ -24,7 +24,7 @@ export default function ProductPage() {
             description={productCopy.hero.subheadline}
           />
           <div className="mt-8">
-            <Button href={productCopy.hero.cta.href} variant="primary">
+            <Button href={productCopy.hero.cta.href} variant="primary" target="_blank" rel="noopener noreferrer">
               {productCopy.hero.cta.label}
             </Button>
           </div>
@@ -33,7 +33,7 @@ export default function ProductPage() {
 
       <section className="border-t border-hairline bg-surface">
         <div className="mx-auto max-w-6xl px-6 py-16">
-          <h2 className="font-display text-2xl text-ink">The four core systems</h2>
+          <h2 className="font-display font-semibold text-2xl text-ink">The four core systems</h2>
           <div className="mt-6">
             <SystemFilterTabs />
           </div>

@@ -27,7 +27,7 @@ export function LedgerRow({
         <span aria-hidden="true" className="hidden sm:block" />
       )}
       <div>
-        <h3 className="font-display text-lg text-ink">{title}</h3>
+        <h3 className="font-display font-semibold text-lg text-ink">{title}</h3>
         {description && (
           <p className="mt-1 text-sm leading-relaxed text-ink-muted">{description}</p>
         )}

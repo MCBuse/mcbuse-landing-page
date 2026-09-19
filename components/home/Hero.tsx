@@ -18,14 +18,16 @@ export function Hero() {
 
         <div className="mt-8 grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
           <div>
-            <h1 className="font-display text-4xl leading-[1.05] text-ink sm:text-5xl lg:text-6xl">
+            <h1 className="font-display font-semibold text-4xl leading-[1.05] text-ink sm:text-5xl lg:text-6xl">
               {headline}
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink-muted">{subheadline}</p>
             <div className="mt-8 flex flex-wrap items-center gap-5">
               <Link
-                href="/contact#merchant-form"
-                className="inline-flex items-center rounded-full bg-brand px-7 py-3.5 text-sm font-semibold text-near-black transition-colors hover:bg-brand-dark"
+                href="https://merchant.mcbuse.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center rounded-[10px] bg-brand px-7 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-brand-dark"
               >
                 Join the Pilot
               </Link>

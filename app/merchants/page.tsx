@@ -19,14 +19,14 @@ export default function MerchantsPage() {
         <Glow />
         <div className="relative mx-auto grid max-w-6xl gap-10 px-6 py-16 sm:py-20 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
           <div>
-            <h1 className="font-display text-4xl leading-tight text-ink sm:text-5xl">
+            <h1 className="font-display font-semibold text-4xl leading-tight text-ink sm:text-5xl">
               {merchantsCopy.hero.headline}
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink-muted">
               {merchantsCopy.hero.subheadline}
             </p>
             <div className="mt-8">
-              <Button href={merchantsCopy.hero.cta.href} variant="primary">
+              <Button href={merchantsCopy.hero.cta.href} variant="primary" target="_blank" rel="noopener noreferrer">
                 {merchantsCopy.hero.cta.label}
               </Button>
             </div>

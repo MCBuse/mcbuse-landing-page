@@ -65,10 +65,10 @@ export function PartnerHeroGraphic({ title, className }: { title: string; classN
 
       {/* MCBuse data layer node */}
       <rect x="168" y="118" width="64" height="64" rx="16" className="fill-brand" />
-      <text x="200" y="146" textAnchor="middle" className="fill-near-black font-mono text-[9px] font-semibold uppercase tracking-wide">
+      <text x="200" y="146" textAnchor="middle" className="fill-white font-mono text-[9px] font-semibold uppercase tracking-wide">
         MCBuse
       </text>
-      <text x="200" y="160" textAnchor="middle" className="fill-near-black font-mono text-[9px] font-semibold uppercase tracking-wide">
+      <text x="200" y="160" textAnchor="middle" className="fill-white font-mono text-[9px] font-semibold uppercase tracking-wide">
         Data Layer
       </text>
 

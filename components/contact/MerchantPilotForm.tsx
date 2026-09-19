@@ -23,7 +23,7 @@ export function MerchantPilotForm() {
 
   return (
     <form ref={formRef} onSubmit={handleSubmit} id="merchant-form" className="scroll-mt-24 space-y-4">
-      <h3 className="font-display text-xl text-ink">Merchant Pilot Application</h3>
+      <h3 className="font-display font-semibold text-xl text-ink">Merchant Pilot Application</h3>
       <TextField name="name" label="Name" error={errors.name} />
       <TextField name="businessName" label="Business Name" error={errors.businessName} />
       <SelectField

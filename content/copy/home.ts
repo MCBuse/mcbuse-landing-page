@@ -36,7 +36,7 @@ export const homeCopy = {
   finalCta: {
     headline: "Help Build Financial Visibility for Micro-Merchants",
     ctas: [
-      { label: "Join the Pilot", href: "/contact#merchant-form", variant: "primary" as const },
+      { label: "Join the Pilot", href: "https://merchant.mcbuse.com", variant: "primary" as const, external: true },
       { label: "Watch Demo", href: "/contact#sandbox", variant: "secondary" as const },
       { label: "Schedule Partner Call", href: "/contact#partner-form", variant: "secondary" as const },
       { label: "Download Pitch Deck", href: "#", variant: "ghost" as const, disabled: true },

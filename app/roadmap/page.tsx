@@ -24,7 +24,7 @@ export default function RoadmapPage() {
             <span
               aria-disabled="true"
               title="Coming soon"
-              className="inline-flex items-center rounded-full border border-hairline px-6 py-3 text-sm font-semibold text-ink-muted/60"
+              className="inline-flex items-center rounded-[10px] border border-hairline px-6 py-3 text-sm font-semibold text-ink-muted/60"
             >
               Download Pitch Deck (PDF)
             </span>
@@ -32,7 +32,7 @@ export default function RoadmapPage() {
               id="pilot-kpis"
               aria-disabled="true"
               title="Pilot KPIs are not published yet"
-              className="inline-flex items-center rounded-full border border-hairline px-6 py-3 text-sm font-semibold text-ink-muted/60"
+              className="inline-flex items-center rounded-[10px] border border-hairline px-6 py-3 text-sm font-semibold text-ink-muted/60"
             >
               View Pilot KPIs
             </span>

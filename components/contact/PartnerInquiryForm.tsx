@@ -24,7 +24,7 @@ export function PartnerInquiryForm() {
 
   return (
     <form ref={formRef} onSubmit={handleSubmit} id="partner-form" className="scroll-mt-24 space-y-4">
-      <h3 className="font-display text-xl text-ink">Partner Inquiry & Discovery</h3>
+      <h3 className="font-display font-semibold text-xl text-ink">Partner Inquiry & Discovery</h3>
       <TextField name="name" label="Name" error={errors.name} />
       <TextField name="companyName" label="Company / Financial Institution Name" error={errors.companyName} />
       <TextField name="role" label="Corporate Role / Title" error={errors.role} />

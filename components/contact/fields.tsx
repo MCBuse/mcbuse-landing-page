@@ -38,7 +38,7 @@ export function TextField({
         required={required}
         aria-invalid={Boolean(error)}
         aria-describedby={error ? errorId(name) : undefined}
-        className="mt-1 w-full rounded-lg border border-hairline bg-paper px-3 py-2 text-sm text-ink focus-visible:border-brand"
+        className="mt-1 w-full rounded-[10px] border border-hairline bg-paper px-3 py-2 text-sm text-ink focus-visible:border-brand"
       />
       <FieldError name={name} error={error} />
     </div>
@@ -68,7 +68,7 @@ export function TextAreaField({
         required={required}
         aria-invalid={Boolean(error)}
         aria-describedby={error ? errorId(name) : undefined}
-        className="mt-1 w-full rounded-lg border border-hairline bg-paper px-3 py-2 text-sm text-ink focus-visible:border-brand"
+        className="mt-1 w-full rounded-[10px] border border-hairline bg-paper px-3 py-2 text-sm text-ink focus-visible:border-brand"
       />
       <FieldError name={name} error={error} />
     </div>
@@ -100,7 +100,7 @@ export function SelectField({
         defaultValue=""
         aria-invalid={Boolean(error)}
         aria-describedby={error ? errorId(name) : undefined}
-        className="mt-1 w-full rounded-lg border border-hairline bg-paper px-3 py-2 text-sm text-ink focus-visible:border-brand"
+        className="mt-1 w-full rounded-[10px] border border-hairline bg-paper px-3 py-2 text-sm text-ink focus-visible:border-brand"
       >
         <option value="" disabled>
           Select an option
