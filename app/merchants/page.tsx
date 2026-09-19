@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Button } from "@/components/ui/Button";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { DashboardMockupPlaceholder } from "@/components/shared/DashboardMockupPlaceholder";
+import { MerchantHeroGraphic } from "@/components/merchants/MerchantHeroGraphic";
 import { EligibilityChecklist } from "@/components/merchants/EligibilityChecklist";
 import { ComplianceFooter } from "@/components/layout/ComplianceFooter";
 import { Glow } from "@/components/ui/Glow";
@@ -30,12 +31,8 @@ export default function MerchantsPage() {
               </Button>
             </div>
           </div>
-          <div
-            role="img"
-            aria-label={merchantsCopy.hero.photoAlt}
-            className="flex aspect-[4/3] items-center justify-center rounded-xl border border-hairline bg-surface text-sm text-ink-muted"
-          >
-            Photo placeholder
+          <div className="aspect-[4/3] overflow-hidden rounded-xl border border-hairline bg-surface">
+            <MerchantHeroGraphic title={merchantsCopy.hero.heroGraphicAlt} className="h-full w-full" />
           </div>
         </div>
       </section>

@@ -1,17 +1,29 @@
 "use client";
 
-import { useActionState } from "react";
-import { submitPartnerInquiry } from "@/lib/actions";
-import { initialFormState } from "@/lib/validation";
+import { partnerInquirySchema } from "@/lib/validation";
+import { useLocalStorageForm } from "@/lib/useLocalStorageForm";
 import { TextField, SelectField, TextAreaField, ConsentCheckbox } from "@/components/contact/fields";
 import { Button } from "@/components/ui/Button";
 
 export function PartnerInquiryForm() {
-  const [state, action, pending] = useActionState(submitPartnerInquiry, initialFormState);
-  const errors = state.fieldErrors ?? {};
+  const { formRef, state, errors, pending, handleSubmit } = useLocalStorageForm({
+    formName: "partner-inquiry",
+    schema: partnerInquirySchema,
+    successMessage:
+      "Thanks — your discovery call request was received. Calendly scheduling is coming soon; we'll reach out by email in the meantime.",
+    parseFormData: (formData) => ({
+      name: formData.get("name"),
+      companyName: formData.get("companyName"),
+      role: formData.get("role"),
+      corporateEmail: formData.get("corporateEmail"),
+      partnerType: formData.get("partnerType"),
+      message: formData.get("message"),
+      consent: formData.get("consent") === "on",
+    }),
+  });
 
   return (
-    <form action={action} id="partner-form" className="scroll-mt-24 space-y-4">
+    <form ref={formRef} onSubmit={handleSubmit} id="partner-form" className="scroll-mt-24 space-y-4">
       <h3 className="font-display text-xl text-ink">Partner Inquiry & Discovery</h3>
       <TextField name="name" label="Name" error={errors.name} />
       <TextField name="companyName" label="Company / Financial Institution Name" error={errors.companyName} />

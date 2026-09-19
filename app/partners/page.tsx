@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/Button";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ResponsibilityBoundaryTable } from "@/components/partners/ResponsibilityBoundaryTable";
 import { ApiFieldsDisclosure } from "@/components/partners/ApiFieldsDisclosure";
+import { PartnerHeroGraphic } from "@/components/partners/PartnerHeroGraphic";
 import { ComplianceFooter } from "@/components/layout/ComplianceFooter";
 import { Glow } from "@/components/ui/Glow";
 import { partnersCopy } from "@/content/copy/partners";
@@ -31,12 +32,8 @@ export default function PartnersPage() {
               </Button>
             </div>
           </div>
-          <div
-            role="img"
-            aria-label={partnersCopy.hero.graphicAlt}
-            className="flex aspect-[4/3] items-center justify-center rounded-xl border border-hairline bg-surface text-sm text-ink-muted"
-          >
-            Data graphic placeholder
+          <div className="aspect-[4/3] overflow-hidden rounded-xl border border-hairline bg-surface">
+            <PartnerHeroGraphic title={partnersCopy.hero.heroGraphicAlt} className="h-full w-full" />
           </div>
         </div>
       </section>

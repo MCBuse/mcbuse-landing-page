@@ -22,7 +22,7 @@ export function ComplianceFooter({
           className="h-9 w-auto"
         />
 
-        <div className="mt-10 grid grid-cols-2 gap-8 sm:grid-cols-4">
+        <div className="mt-10 grid grid-cols-2 gap-x-6 gap-y-8 sm:grid-cols-4 sm:gap-8">
           {footerColumns.map((column) => (
             <div key={column.title}>
               <h3 className="font-mono text-xs font-semibold tracking-wide text-ink-muted">

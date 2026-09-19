@@ -1,17 +1,25 @@
 "use client";
 
-import { useActionState } from "react";
-import { submitWaitlist } from "@/lib/actions";
-import { initialFormState } from "@/lib/validation";
+import { waitlistSchema } from "@/lib/validation";
+import { useLocalStorageForm } from "@/lib/useLocalStorageForm";
 import { TextField, SelectField, ConsentCheckbox } from "@/components/contact/fields";
 import { Button } from "@/components/ui/Button";
 
 export function WaitlistForm() {
-  const [state, action, pending] = useActionState(submitWaitlist, initialFormState);
-  const errors = state.fieldErrors ?? {};
+  const { formRef, state, errors, pending, handleSubmit } = useLocalStorageForm({
+    formName: "waitlist",
+    schema: waitlistSchema,
+    successMessage: "You're on the waitlist — we'll be in touch.",
+    parseFormData: (formData) => ({
+      name: formData.get("name"),
+      email: formData.get("email"),
+      role: formData.get("role"),
+      consent: formData.get("consent") === "on",
+    }),
+  });
 
   return (
-    <form action={action} id="waitlist-form" className="scroll-mt-24 space-y-4">
+    <form ref={formRef} onSubmit={handleSubmit} id="waitlist-form" className="scroll-mt-24 space-y-4">
       <h3 className="font-display text-xl text-ink">General Waitlist</h3>
       <TextField name="name" label="Name" error={errors.name} />
       <TextField name="email" label="Email" type="email" error={errors.email} />

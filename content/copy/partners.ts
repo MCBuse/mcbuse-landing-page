@@ -4,7 +4,8 @@ export const partnersCopy = {
     headline: "Structured Merchant Data for Underserved Low-Ticket Segments",
     subheadline: "A data infrastructure layer that supports not replaces your underwriting process.",
     cta: { label: "Schedule a Partner Call", href: "/contact#partner-form" },
-    graphicAlt: "Corporate data graphic placeholder: visualizing B2B fintech data pipelines and bank core connectors",
+    heroGraphicAlt:
+      "Diagram of merchant transaction data flowing through MCBuse's data layer to banks, fintechs, micro-credit, PSP, and stable-coin partners",
   },
   apiFields: {
     cta: "Review API Data Fields",

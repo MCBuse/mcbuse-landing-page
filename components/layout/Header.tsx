@@ -47,7 +47,7 @@ export function Header() {
 
         <button
           type="button"
-          className="inline-flex items-center justify-center rounded-xl border border-hairline p-2 lg:hidden"
+          className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-xl border border-hairline p-2 lg:hidden"
           aria-expanded={open}
           aria-controls="mobile-nav"
           aria-label={open ? "Close menu" : "Open menu"}
@@ -72,17 +72,17 @@ export function Header() {
                 <Link
                   href={item.href}
                   onClick={() => setOpen(false)}
-                  className="block py-2 text-sm font-medium text-ink hover:text-brand-ink"
+                  className="flex min-h-11 items-center py-2 text-sm font-medium text-ink hover:text-brand-ink"
                 >
                   {item.label}
                 </Link>
               </li>
             ))}
             <li className="mt-3 flex flex-col gap-2">
-              <Button href={headerCtas.watchDemo.href} variant="ghost" onClick={() => setOpen(false)}>
+              <Button href={headerCtas.watchDemo.href} variant="ghost" onClick={() => setOpen(false)} className="w-full">
                 {headerCtas.watchDemo.label}
               </Button>
-              <Button href={headerCtas.joinPilot.href} variant="primary" onClick={() => setOpen(false)}>
+              <Button href={headerCtas.joinPilot.href} variant="primary" onClick={() => setOpen(false)} className="w-full">
                 {headerCtas.joinPilot.label}
               </Button>
             </li>

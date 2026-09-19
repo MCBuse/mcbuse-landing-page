@@ -3,7 +3,7 @@ export const merchantsCopy = {
     headline: "Accept payments. Understand activity. Build financial visibility.",
     subheadline: "For kiosks, cafés, bakeries, and food trucks daily sales tracking and payout clarity.",
     cta: { label: "Join the Pilot", href: "/contact#merchant-form" },
-    photoAlt: "Photo placeholder: urban micro-retailer storefront setup in Berlin or Munich",
+    heroGraphicAlt: "Illustration of a micro-retailer kiosk terminal accepting a QR/NFC tap-to-pay from a customer's phone",
   },
   benefits: [
     "QR/NFC payment-event capture",
